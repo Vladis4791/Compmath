@@ -65,8 +65,8 @@ void EllipseModel::calcParams()
     _bigAxis = std::max(a_prime, b_prime);
 
     //Вычисление массы СЧД
-    double PI = 4*atan(1.);
-    double bigAxixInMetrs = sin(_bigAxis) * PI / (180 * 3600) * 8930 * 3.086e+16;
+    double PI = 4atan(1.);
+    double bigAxixInMetrs = sin(_bigAxis PI / (180 * 3600)) * 8930 * 3.086e+16;
     _blackHoleMass = (pow(bigAxixInMetrs, 3) * 4 * pow(PI, 2))
             / (pow(_T * 365 * 24 * 60 * 60, 2) * 6.6743 * pow(10, -11));
     _blackHoleMass /= 1.988 * pow (10, 36);
